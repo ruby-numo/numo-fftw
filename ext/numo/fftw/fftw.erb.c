@@ -54,7 +54,7 @@ iter_fftw_<%=func%>(na_loop_t *const lp)
 }
 
 /*
-  <%=d%>-dimentional Complex Discrete Fourier Transform
+  <%=d%>-dimentional Complex Discrete Fourier Transform along the last <%=d%> dimension<%="s" if d>1%>.
   @overload dft_<%=d%>d(narray,sign)
   @param [Numo::DComplex] narray Input NArray with at least <%=d%> dimension<%="s" if d>1%>.
   @param [Numeric] sign  the sign of the exponent in the formula
