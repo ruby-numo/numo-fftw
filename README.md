@@ -6,7 +6,7 @@
 
 ## Numo::FFTW
 * [GitHub site](https://github.com/ruby-numo/fftw)
-* [Tentative API Document]()
+* [Tentative API Document](https://ruby-numo.github.io/fftw/yard/Numo/FFTW.html)
 
 ## Installation
 * Install [FFTW3](http://www.fftw.org/)
