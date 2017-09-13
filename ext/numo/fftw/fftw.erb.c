@@ -30,7 +30,6 @@ $funcs = []
 %>
 
 <% (1..3).each do |d| %>
-// <%=d%>-dimentional DComplex Discrete Fourier Transform
 <% $funcs.push func="dft_#{d}d" %>
 static void
 iter_fftw_<%=func%>(na_loop_t *const lp)
@@ -140,8 +139,7 @@ numo_fftw_<%=func%>(VALUE mod, VALUE vna, VALUE vsign)
         in = (fftw_complex*)na_get_pointer_for_read(vna);
         out = (fftw_complex*)na_get_pointer_for_write(vans);
     }
-    plan = fftw_plan_dft(ndim, shape,
-                         in, out, sign, FFTW_ESTIMATE);
+    plan = fftw_plan_dft(ndim, shape, in, out, sign, FFTW_ESTIMATE);
     fftw_execute(plan);
     fftw_destroy_plan(plan);
 
