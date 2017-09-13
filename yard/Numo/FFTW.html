@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Numo::FFTW
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Numo::FFTW";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../x_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Numo.html" title="Numo (module)">Numo</a></span></span>
+     &raquo; 
+    <span class="title">FFTW</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Numo::FFTW
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>ext/numo/fftw/fftw.c</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dft-class_method" title="dft (class method)">.<strong>dft</strong>(narray, sign)  &#x21d2; Numo::DComplex </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Multi-dimentional Complex Discrete Fourier Transform.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dft_1d-class_method" title="dft_1d (class method)">.<strong>dft_1d</strong>(narray, sign)  &#x21d2; Numo::DComplex </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>1-dimentional Complex Discrete Fourier Transform.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dft_2d-class_method" title="dft_2d (class method)">.<strong>dft_2d</strong>(narray, sign)  &#x21d2; Numo::DComplex </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>2-dimentional Complex Discrete Fourier Transform.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dft_3d-class_method" title="dft_3d (class method)">.<strong>dft_3d</strong>(narray, sign)  &#x21d2; Numo::DComplex </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>3-dimentional Complex Discrete Fourier Transform.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="dft-class_method">
+  
+    .<strong>dft</strong>(narray, sign)  &#x21d2; <tt>Numo::DComplex</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Multi-dimentional Complex Discrete Fourier Transform</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>narray</span>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Input NArray with any dimension.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sign</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sign of the exponent in the formula that defines the Fourier transform.
+It can be -1 (= FFTW_FORWARD) or +1 (= FFTW_BACKWARD).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Result DComplex NArray with the same shape as input NArray.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/numo/fftw/fftw.c', line 232</span>
+
+static VALUE
+numo_fftw_dft(VALUE mod, VALUE vna, VALUE vsign)
+{
+    VALUE vans;
+    int sign;
+    narray_t *na;
+    int ndim, i;
+    int *shape;
+    fftw_complex *in, *out;
+    fftw_plan plan;
+
+    sign = NUM2INT(vsign);
+    if (sign != 1 &amp;&amp; sign != -1) {
+        rb_raise(rb_eArgError,&quot;second argument (sign) must be 1 or -1&quot;);
+    }
+    if (CLASS_OF(vna) != numo_cDComplex) {
+        vna = rb_funcall(numo_cDComplex, id_cast, 1, vna);
+    }
+    if (!RTEST(nary_check_contiguous(vna))) {
+        vna = nary_dup(vna);
+    }
+    GetNArray(vna,na);
+    ndim = NA_NDIM(na);
+    shape = ALLOCA_N(int,ndim);
+    for (i=0; i&lt;ndim; i++) {
+        shape[i] = NA_SHAPE(na)[i];
+    }
+    if (TEST_INPLACE(vna)) {
+        vans = vna;
+        in = out = (fftw_complex*)na_get_pointer_for_read_write(vna);
+    } else {
+        vans = nary_s_new_like(numo_cDComplex, vna);
+        in = (fftw_complex*)na_get_pointer_for_read(vna);
+        out = (fftw_complex*)na_get_pointer_for_write(vans);
+    }
+    plan = fftw_plan_dft(ndim, shape, in, out, sign, FFTW_ESTIMATE);
+    fftw_execute(plan);
+    fftw_destroy_plan(plan);
+
+    RB_GC_GUARD(vna);
+    return vans;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dft_1d-class_method">
+  
+    .<strong>dft_1d</strong>(narray, sign)  &#x21d2; <tt>Numo::DComplex</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>1-dimentional Complex Discrete Fourier Transform</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>narray</span>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Input NArray with at least 1 dimension.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sign</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sign of the exponent in the formula that defines the Fourier transform.
+It can be -1 (= FFTW_FORWARD) or +1 (= FFTW_BACKWARD).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Result DComplex NArray with <code>shape = [.., nx]</code>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/numo/fftw/fftw.c', line 55</span>
+
+static VALUE
+numo_fftw_dft_1d(VALUE mod, VALUE vna, VALUE vsign)
+{
+    narray_t *na;
+    VALUE vans;
+    int ndim;
+    int sign=-1;
+    size_t shape[1];
+    ndfunc_arg_in_t ain[1] = {{cDC,1}};
+    ndfunc_arg_out_t aout[1] = {{cDC,1,shape}};
+    ndfunc_t ndf = { iter_fftw_dft_1d, NO_LOOP|NDF_INPLACE, 1, 1, ain, aout };
+
+    sign = NUM2INT(vsign);
+    if (sign != 1 &amp;&amp; sign != -1) {
+        rb_raise(rb_eArgError,&quot;second argument (sign) must be 1 or -1&quot;);
+    }
+    GetNArray(vna,na);
+    ndim = NA_NDIM(na);
+    if (ndim&lt;1) {
+        rb_raise(nary_eDimensionError,&quot;ndim(=%d) should &gt;= 1&quot;,ndim);
+    }
+
+    shape[0] = NA_SHAPE(na)[ndim-1];
+
+    vans = na_ndloop3(&amp;ndf, &amp;sign, 1, vna);
+    RB_GC_GUARD(vna);
+    return vans;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dft_2d-class_method">
+  
+    .<strong>dft_2d</strong>(narray, sign)  &#x21d2; <tt>Numo::DComplex</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>2-dimentional Complex Discrete Fourier Transform</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>narray</span>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Input NArray with at least 2 dimensions.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sign</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sign of the exponent in the formula that defines the Fourier transform.
+It can be -1 (= FFTW_FORWARD) or +1 (= FFTW_BACKWARD).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Result DComplex NArray with <code>shape = [.., ny, nx]</code>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/numo/fftw/fftw.c', line 119</span>
+
+static VALUE
+numo_fftw_dft_2d(VALUE mod, VALUE vna, VALUE vsign)
+{
+    narray_t *na;
+    VALUE vans;
+    int ndim;
+    int sign=-1;
+    size_t shape[2];
+    ndfunc_arg_in_t ain[1] = {{cDC,2}};
+    ndfunc_arg_out_t aout[1] = {{cDC,2,shape}};
+    ndfunc_t ndf = { iter_fftw_dft_2d, NO_LOOP|NDF_INPLACE, 1, 1, ain, aout };
+
+    sign = NUM2INT(vsign);
+    if (sign != 1 &amp;&amp; sign != -1) {
+        rb_raise(rb_eArgError,&quot;second argument (sign) must be 1 or -1&quot;);
+    }
+    GetNArray(vna,na);
+    ndim = NA_NDIM(na);
+    if (ndim&lt;2) {
+        rb_raise(nary_eDimensionError,&quot;ndim(=%d) should &gt;= 2&quot;,ndim);
+    }
+
+    shape[1] = NA_SHAPE(na)[ndim-1];
+
+    shape[0] = NA_SHAPE(na)[ndim-2];
+
+    vans = na_ndloop3(&amp;ndf, &amp;sign, 1, vna);
+    RB_GC_GUARD(vna);
+    return vans;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dft_3d-class_method">
+  
+    .<strong>dft_3d</strong>(narray, sign)  &#x21d2; <tt>Numo::DComplex</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>3-dimentional Complex Discrete Fourier Transform</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>narray</span>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Input NArray with at least 3 dimensions.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>sign</span>
+      
+      
+        <span class='type'>(<tt>Numeric</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the sign of the exponent in the formula that defines the Fourier transform.
+It can be -1 (= FFTW_FORWARD) or +1 (= FFTW_BACKWARD).</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Numo::DComplex</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Result DComplex NArray with <code>shape = [.., nz, ny, nx]</code>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/numo/fftw/fftw.c', line 187</span>
+
+static VALUE
+numo_fftw_dft_3d(VALUE mod, VALUE vna, VALUE vsign)
+{
+    narray_t *na;
+    VALUE vans;
+    int ndim;
+    int sign=-1;
+    size_t shape[3];
+    ndfunc_arg_in_t ain[1] = {{cDC,3}};
+    ndfunc_arg_out_t aout[1] = {{cDC,3,shape}};
+    ndfunc_t ndf = { iter_fftw_dft_3d, NO_LOOP|NDF_INPLACE, 1, 1, ain, aout };
+
+    sign = NUM2INT(vsign);
+    if (sign != 1 &amp;&amp; sign != -1) {
+        rb_raise(rb_eArgError,&quot;second argument (sign) must be 1 or -1&quot;);
+    }
+    GetNArray(vna,na);
+    ndim = NA_NDIM(na);
+    if (ndim&lt;3) {
+        rb_raise(nary_eDimensionError,&quot;ndim(=%d) should &gt;= 3&quot;,ndim);
+    }
+
+    shape[2] = NA_SHAPE(na)[ndim-1];
+
+    shape[1] = NA_SHAPE(na)[ndim-2];
+
+    shape[0] = NA_SHAPE(na)[ndim-3];
+
+    vans = na_ndloop3(&amp;ndf, &amp;sign, 1, vna);
+    RB_GC_GUARD(vna);
+    return vans;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Sep 13 20:34:48 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.4.1).
+</div>
+
+    </div>
+  </body>
+</html>

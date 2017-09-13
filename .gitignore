@@ -15,13 +15,6 @@ tmp/
 .repl_history
 build/
 
-## Documentation cache and generated files:
-.yardoc/
-_yardoc/
-doc/
-rdoc/
-yard/
-
 ## Environment normalization:
 /.bundle/
 /vendor/bundle
@@ -41,6 +34,3 @@ Gemfile.lock
 *.o
 *.so
 TAGS
-/ext/numo/fftw/Makefile
-/ext/numo/fftw/mkmf.log
-/ext/numo/fftw/fftw.c
