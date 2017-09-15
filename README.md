@@ -5,7 +5,7 @@ FFTW3 interface for Ruby/Numo::NArray.
 [GitHub site](https://github.com/ruby-numo/fftw) |
 [RubyGems](https://rubygems.org/gems/numo-fftw)
 
-## [Tentative API Document](https://ruby-numo.github.io/fftw/yard/Numo/FFTW.html)
+## [Numo::FFTW API Document](https://ruby-numo.github.io/fftw/yard/Numo/FFTW.html)
 
 ## FFTW
 * FFTW is a C subroutine library for computing the discrete Fourier transform (DFT) in one or more dimensions, of arbitrary input size, and of both real and complex data.
