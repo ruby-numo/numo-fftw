@@ -2,6 +2,8 @@
 
 FFTW3 interface for Ruby/Numo::NArray.
 
+Under development.
+
 [GitHub site](https://github.com/ruby-numo/fftw) |
 [RubyGems](https://rubygems.org/gems/numo-fftw)
 
