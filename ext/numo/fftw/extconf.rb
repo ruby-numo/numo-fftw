@@ -22,6 +22,21 @@ EOL
   exit(1)
 end
 
+if /cygwin|mingw/ =~ RUBY_PLATFORM
+  narray_include = File.expand_path(File.dirname(Gem.find_files("numo/numo/narray.h")[0]))
+  narray_lib = File.expand_path(File.dirname(Gem.find_files("numo/libnarray.a")[0]))
+  dir_config('narray', narray_include, narray_lib)
+
+  if !have_library('narray')
+    print <<EOL
+    Library libnarray.a was not found. Give pathname as follows:
+    % ruby extconf.rb --with-narray-lib=library_dir
+EOL
+    exit(-1)
+  end
+
+end
+
 if !have_header('fftw3.h')
   print <<EOL
   Header fftw3.h was not found. Give pathname as follows:
